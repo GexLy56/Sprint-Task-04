@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sprint Task 04</title>
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <script src="script.js"></script>
+</head>
+<body style="margin-top: 0" onload="init_page()">
+    <div class="header" id="header">
+        <div><h1>TWITTER</h1></div>
+        <div style="display: flex; align-items: center">
+            <p><a href="#">Tweets</a></p>
+            <p><a href="#" onclick="login_page()" id="login">Login</a></p>
+            <p id="register"><a href="Sprint-Task-04.html">Register</a></p>
+        </div>
+    </div>
+    <div class="form" id="form_reg">
+        <div>
+            <p>EMAIL :</p>
+            <input type="text" id="email">
+        </div>
+        <div>
+            <p>PASSWORD :</p>
+            <input type="text" id="password">
+        </div>
+        <div>
+            <p>FULL NAME :</p>
+            <input type="text" id="full_name">
+        </div>
+        <div>
+            <p>COUNTRY :</p>
+            <select id="country">
+                <option value="Kazakhstan">Kazakhstan</option>
+                <option value="Russian Federation">Russian Federation</option>
+            </select>
+        </div>
+        <div class="date">
+            <p>BIRTHDATE :</p>
+            <input type="date" id="birthdate">
+        </div>
+        <button class="reg_but" onclick="addUser()">REGISTER</button>
+    </div>
+</body>
+</html>
